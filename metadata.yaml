@@ -1,5 +1,7 @@
 homepage: "https://www.dito.com.br"
 documentation: "https://ingest.dito.com.br/docs//index.html"
 versions:
+  - sha: 80ff5d880e325577d38c3525d396bec17cfe8914
+    changeNotes: updating logo
   - sha: 741c7e5c8504d56456abfb6feaa4aaeb2c813dc5
     changeNotes: Initial release.
