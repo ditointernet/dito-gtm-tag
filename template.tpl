@@ -138,6 +138,8 @@ const getContainerVersion = require("getContainerVersion");
 const getCookieValues = require("getCookieValues");
 const setCookie = require('setCookie');
 const getType = require("getType");
+const getTimestampMillis = require("getTimestampMillis");
+const Math = require("Math");
 
 const containerVersion = getContainerVersion();
 
@@ -169,6 +171,8 @@ let requestOptions = {
 if (data.requestTimeout) {
   requestOptions.timeout = makeInteger(data.requestTimeout);
 }
+
+eventData.timestamp = Math.floor(getTimestampMillis() / 1000);
 
 maybeGetDitoUserId()
   .then((userId) => {
